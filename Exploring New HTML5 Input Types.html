@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!--Task 1: Implementing Email Input-->
+
+<form action="submit" method="post">
+    <label for="email"> Email Address:</label>
+    <input type="text" id="email" name="email" placeholder="Please enter your email" required>
+    <button type="submit">Submit</button>
+</form>
+
+<!--Task 2: Utilizing Number Input-->
+
+<form action="submit">
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="20" step="1">
+    <button type="submit">Submit</button>
+</form>
+
+<!--Task 3: Employing Date Input-->
+
+<form action="submit" metohds="post">
+    <label for="birthdate">Date</label>
+    <input type="date" id="birthdate" name="birthdate" placeholder="Enter BD">
+    <button type="submit">Submit</button>
+
+</form>
+
+<form action="submit" method="post">
+    <label for="date">Date</label>
+    <input type="text" id="date" name="date" placeholder="Todays Date MM/DD/YYYY">
+    <button type="submit">Submit</button>
+</form>
+
+<!--Task 4: Enhancing User Experience with Range Input-->
+
+<form action="/submit-range" method="post">
+        <label for="rating">Rating (1-10):</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5" oninput="updateRangeValue(this.value)" aria-valuemin="1" aria-valuemax="10" aria-valuenow="5">
+        <span class="range-value" id="rangeValue">5</span>
+        <button type="submit">Submit</button>
+</form>
+
+<!--2. Building a Comprehensive Web Form-->
+
+<!--Task 1: Creating a Selection Experience-->
+<form action="/submit-form" method="post">
+    <label>Coding Skill Level:</label>
+    <input type="radio" id="beginner" name="favorite" value="beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="favorite" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" id="expert" name="favorite" value="expert">
+    <label for="expert">Expert</label>
+    <button type="submit">Submit</button>
+</form>
+
+<form action="/submit-form" method="post">
+    <label for="programming-language">Select your favorite programming language:</label>
+    <select id="programming-language" name="programming-language">
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="java">Java</option>
+    <option value="ruby">Ruby</option>
+    <option value="c++">C++</option>
+    <option value="c#">C#</option>
+    <option value="php">PHP</option>
+    <option value="swift">Swift</option>
+    <option value="typescript">TypeScript</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+
+<form action="/submit-form" method="post">
+    <label for="preferred">Preferred Development Platforms:</label>
+    <label for="platform1">
+        <input type="checkbox" id="platform1" name="platform1" value="web">
+        Web Development
+    </label>
+    <label for="platform2">
+        <input type="checkbox" id="platform2" name="platform2" value="mobile">
+        Mobile Development
+    </label>
+    <label for="platform3">
+        <input type="checkbox" id="platform3" name="platform3" value="desktop">
+        Desktop Development
+    </label>
+</form>
